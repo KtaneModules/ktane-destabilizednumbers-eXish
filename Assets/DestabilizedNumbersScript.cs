@@ -87,7 +87,7 @@ public class DestabilizedNumbersScript : MonoBehaviour {
                 showSequence = !showSequence;
                 executeChange = true;
             }
-            else if (index == 1)
+            else if (index == 1 && !showSequence)
             {
                 if (lastMade == -1)
                 {
@@ -117,7 +117,7 @@ public class DestabilizedNumbersScript : MonoBehaviour {
                     displayText.text = "";
                 }
             }
-            else if (displayText.text.Length < 3)
+            else if (displayText.text.Length < 3 && !showSequence)
             {
                 displayText.text += index - 2;
             }
