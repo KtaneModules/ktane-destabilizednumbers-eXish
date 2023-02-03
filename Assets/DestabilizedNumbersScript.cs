@@ -232,9 +232,9 @@ public class DestabilizedNumbersScript : MonoBehaviour {
                     yield return "sendtochaterror!f The specified number '" + parameters[1] + "' is invalid!";
                     yield break;
                 }
-                if (temp < 0)
+                if (temp < 0 || temp > 999)
                 {
-                    yield return "sendtochaterror The specified number '" + parameters[1] + "' is invalid!";
+                    yield return "sendtochaterror The specified number '" + parameters[1] + "' is out of range 0-999!";
                     yield break;
                 }
                 if (showSequence)
@@ -243,7 +243,7 @@ public class DestabilizedNumbersScript : MonoBehaviour {
                     yield break;
                 }
                 yield return null;
-                for (int i = 1; i < parameters.Length; i++)
+                for (int i = 0; i < parameters[1].Length; i++)
                 {
                     buttons[int.Parse(parameters[1][i].ToString()) + 2].OnInteract();
                     yield return new WaitForSeconds(0.1f);

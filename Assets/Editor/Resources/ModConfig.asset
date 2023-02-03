@@ -23,11 +23,11 @@ MonoBehaviour:
     PDF: https://ktane.timwi.de/PDF/Destabilized%20Numbers.pdf
 
 
-    Destabilized Numbers (destabilizedNumbersModule) v1.0.1
+    Destabilized Numbers (destabilizedNumbersModule) v1.0.2
 
     Module and Concept by eXish
 
     Twitch Plays supported'
-  version: 1.0.1
+  version: 1.0.2
   outputFolder: build
   previewImage: {fileID: 2800000, guid: ec33d318034e8e24faf1b55c51885d9d, type: 3}
